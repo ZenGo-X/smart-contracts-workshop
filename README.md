@@ -4,7 +4,7 @@
 
 ## Getting started
 
-In this workshop every participant with some common knowledge of the Ethereum network (or EVM in general) and JS will deploy a smart contract on Goerli Testnet and perform some basic tests on a local envorinment using HardHat framework :construction_worker:
+In this workshop every participant will deploy a smart contract on Goerli Testnet and perform some basic tests on a local envorinment using HardHat framework :construction_worker: with some common knowledge of the Ethereum network (or EVM in general) and JS
 
 ## Prerequisites
 
