@@ -11,11 +11,11 @@ In this workshop every participant will deploy a smart contract on Goerli Testne
 - The recommended Development IDE for HardHat is
   VSCode make sure you have it first: https://code.visualstudio.com/download
 
-- We'll set up our HardHat environemnt using [that guide](https://hardhat.org/tutorial/setting-up-the-environment)
+- Set up HardHat environemnt using [that guide](https://hardhat.org/tutorial/setting-up-the-environment)
 
 - [hh shorthand installation](https://hardhat.org/hardhat-runner/docs/guides/command-line-completion)
 
-- Setup a MetaMask account from which you'll deploy the contracts
+- Create a new MetaMask account from which you'll deploy the contracts
 
 ## Setting up the environment
 
@@ -28,7 +28,7 @@ In this workshop every participant will deploy a smart contract on Goerli Testne
 - Setting up Infura key:
 
   - follow Step 1 + 2 on the following [link](https://docs.infura.io/infura/getting-started) </br>
-    On step 2 create 'Web3 API' Porject
+    On step 2 create 'Web3 API' Project
   - Enter your API Key in [.env](.env) file as the `PROVIDER_KEY`
 
 - Setting up Etherscan API:
