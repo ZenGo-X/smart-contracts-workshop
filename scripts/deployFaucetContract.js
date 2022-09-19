@@ -7,17 +7,16 @@
 const hre = require("hardhat");
 
 async function main() {
-  const [deployer] = await ethers.getSigners();
-  const faucetContractRinkebyAddress = "0x53eeAc329dF155F07F327D13867FC93b0C7ebBF3";
+    const [deployer] = await ethers.getSigners();
+    console.log("Deploying Faucet contract with the account:", deployer.address); 
+    SimpleFaucet = await ethers.getContractFactory("SimpleFaucet");
+    simpleFaucet = await SimpleFaucet.deploy();
+    await simpleFaucet.deployed(); 
+    console.log("SimpleFaucet deployed to:", simpleFaucet.address);
+    await simpleFaucet.deposit({value: ethers.utils.parseEther("1")});
 
-  const tx = {
-    nonce: await deployer.getTransactionCount(),
-    data:  "0x4e71d92d",
-    gasLimit: 1000000,
-    to: faucetContractRinkebyAddress,
-  }
-  await deployer.sendTransaction(tx);
   
+
 }
 
 // We recommend this pattern to be able to use async/await everywhere

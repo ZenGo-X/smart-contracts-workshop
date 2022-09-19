@@ -10,6 +10,8 @@ artifacts
 .envReal
 test/SimpleFaucet.js
 contracts/SimpleFaucet.sol
+scripts/deployFaucet.js
+/scripts/setFaucetClaimers.js
 
 node_modules
 coverage
