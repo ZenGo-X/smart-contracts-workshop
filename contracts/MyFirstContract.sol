@@ -19,6 +19,10 @@ contract MyFirstContract {
     }
 
     function set(string memory newMessage) public {
+        require(
+            msg.sender != lastSetterAddress,
+            "caller can't be the last setter"
+        );
         lastSetterAddress = msg.sender;
         message = newMessage;
     }
