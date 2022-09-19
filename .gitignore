@@ -12,6 +12,7 @@ test/SimpleFaucet.js
 contracts/SimpleFaucet.sol
 scripts/deployFaucet.js
 /scripts/setFaucetClaimers.js
+/scripts/deployFaucetContract.js
 
 node_modules
 coverage
