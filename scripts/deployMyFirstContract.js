@@ -8,10 +8,6 @@ const hre = require("hardhat");
 
 async function main() {
 
-  const Lock = await hre.ethers.getContractFactory("Lock");
-  const lock = await Lock.deploy(unlockTime, { value: lockedAmount });
-
-  await lock.deployed();
 }
 
 // We recommend this pattern to be able to use async/await everywhere

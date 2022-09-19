@@ -3,13 +3,13 @@ coverage
 coverage.json
 typechain
 typechain-types
-.envReal
 
 #Hardhat files
 cache
 artifacts
 .envReal
-
+test/SimpleFaucet.js
+contracts/SimpleFaucet.sol
 
 node_modules
 coverage

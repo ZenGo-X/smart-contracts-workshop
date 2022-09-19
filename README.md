@@ -13,9 +13,13 @@ In this workshop every participant will deploy a smart contract on Goerli Testne
 
 - Set up HardHat environemnt using [that guide](https://hardhat.org/tutorial/setting-up-the-environment)
 
-- [hh shorthand installation](https://hardhat.org/hardhat-runner/docs/guides/command-line-completion)
+  then on your console enter:
 
-- Create a new MetaMask account from which you'll deploy the contracts
+  ```shell
+  export NVM_DIR="$HOME/.nvm" [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+  ```
+
+- [hh shorthand installation](https://hardhat.org/hardhat-runner/docs/guides/command-line-completion)
 
 ## Setting up the environment
 
@@ -41,8 +45,12 @@ In this workshop every participant will deploy a smart contract on Goerli Testne
 
 - Setting up Deployer account private key:
 
-  - Create a new MetaMask account and call it 'Deployer'
-  - Copy the account's private key to [.env](.env) file as the `DEPLOY_WALLET_PRIVATE_KEY` [link](https://metamask.zendesk.com/hc/en-us/articles/360015289632-How-to-export-an-account-s-private-key)
+  - Create a **NEW** MetaMask account and call it 'Deployer' - [guide](https://metamask.zendesk.com/hc/en-us/articles/360015289452-How-to-create-an-additional-account-in-your-wallet)
+  - Copy your Deployer account address to the [following doc](https://docs.google.com/document/d/1UhV1ry83E6eavRE_mw7cVpUVN1wQ7MEUUEug0o4VBQw/edit) in a new line
+  - Copy your Deployer account private key to [.env](.env) file as the `DEPLOY_WALLET_PRIVATE_KEY` - [guide](https://metamask.zendesk.com/hc/en-us/articles/360015289632-How-to-export-an-account-s-private-key)
+
+- Check that everythink works:
+  SOON
 
 ## Tests
 

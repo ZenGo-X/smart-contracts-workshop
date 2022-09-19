@@ -6,10 +6,10 @@ import "erc721a/contracts/ERC721A.sol";
 
 import "hardhat/console.sol";
 
-contract MyFirstNFT is ERC721A {
+contract MyFirstNFT is ERC721A, Ownable {
     string public BASE_URI;
-    uint128 public constant MAX_SUPPLY;
-    uint128 public constant MAX_MINT_PER_TX;
+    //uint128 public constant MAX_SUPPLY;
+    //uint128 public constant MAX_MINT_PER_TX;
     uint256 mintPrice = 0.01 ether;
 
     constructor() ERC721A("", "") {}
@@ -31,7 +31,7 @@ contract MyFirstNFT is ERC721A {
         returns (string memory)
     {
         require(
-            _exists(tokenId),
+            _exists(_tokenId),
             "ERC721Metadata: URI query for nonexistent token"
         );
         return string(abi.encodePacked(BASE_URI, _tokenId));
