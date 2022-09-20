@@ -11,8 +11,6 @@ In this workshop every participant will deploy a smart contract on Goerli Testne
 - The recommended Development IDE for HardHat is
   VSCode make sure you have it first: https://code.visualstudio.com/download
 
-  - Make sure to install HardHat extension for VSCode
-
 - Set up HardHat environemnt using [that guide](https://hardhat.org/tutorial/setting-up-the-environment)
 
   you might need to enter:
@@ -21,7 +19,9 @@ In this workshop every participant will deploy a smart contract on Goerli Testne
   export NVM_DIR="$HOME/.nvm" [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
   ```
 
-- [hh shorthand installation](https://hardhat.org/hardhat-runner/docs/guides/command-line-completion)
+  - Make sure to install HardHat extension for VSCode
+
+- hh shorthand [installation](https://hardhat.org/hardhat-runner/docs/guides/command-line-completion)
 
 ## Setting up the environment
 
@@ -55,5 +55,8 @@ In this workshop every participant will deploy a smart contract on Goerli Testne
   SOON
 
 ## Tests
+
+- How to use hardhat.sol
+- How to
 
 ## Deployment
