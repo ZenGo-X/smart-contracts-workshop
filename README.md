@@ -56,7 +56,7 @@ In this workshop every participant will deploy a smart contract on Goerli Testne
 
 ## Solidity Basics
 
-- Common variables types
+- [Common variables types]()
 - function types
 - Constructor
 - Modifiers (onlyOwner)
@@ -64,6 +64,7 @@ In this workshop every participant will deploy a smart contract on Goerli Testne
 
 ## Tests
 
+- Intro to HardHat testing
 - Write your first NFT contract
 - Test it using HardHat
 - Using hardhat.sol in order to debug a contract live
