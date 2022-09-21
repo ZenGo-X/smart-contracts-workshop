@@ -80,3 +80,4 @@ In this workshop every participant will deploy a smart contract on Goerli Testne
 
 - [Solidity Cheatsheet](https://docs.soliditylang.org/en/latest/cheatsheet.html)
 - [CryptoZombies](https://cryptozombies.io/en/course/)
+- [Solidity By Example](https://solidity-by-example.org/)
