@@ -1,10 +1,8 @@
-// SPDX-License-Identifier: UNLICENSED
+// SPDX-License-Identifier: MIT
 pragma solidity ^0.8.17;
 
-import "hardhat/console.sol";
-
 contract MyFirstContract {
-    uint immutable deploymentTimeStamp;
+    uint256 immutable deploymentTimeStamp;
     address public immutable owner;
     address public lastSetterAddress;
     string public message;

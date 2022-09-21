@@ -54,9 +54,28 @@ In this workshop every participant will deploy a smart contract on Goerli Testne
 - Check that everythink works:
   SOON
 
+## Solidity Basics
+
+- Common variables types
+- function types
+- Constructor
+- Modifiers (onlyOwner)
+- Implement functions from other contracts
+
 ## Tests
 
-- How to use hardhat.sol
-- How to
+- Write your first NFT contract
+- Test it using HardHat
+- Using hardhat.sol in order to debug a contract live
 
 ## Deployment
+
+- Deploy a contract to a live Testnet
+- Verify your contract on Etherscan using HardHat
+- Interact with your contract using a script
+- Change a state parameter on your contract using a script
+
+## Additional resources
+
+- [Solidity Cheatsheet](https://docs.soliditylang.org/en/latest/cheatsheet.html)
+- [CryptoZombies](https://cryptozombies.io/en/course/)
