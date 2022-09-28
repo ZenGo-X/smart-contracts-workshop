@@ -57,8 +57,8 @@ In this workshop every participant will deploy a smart contract on Goerli Testne
 ## Solidity Basics
 
 - [Common variables types](https://docs.soliditylang.org/en/v0.8.17/types.html)
-- [Globally available variables] (https://docs.soliditylang.org/en/v0.8.17/units-and-global-variables.html)
-- [Function types] (https://docs.soliditylang.org/en/v0.8.17/cheatsheet.html?highlight=visibility#function-visibility-specifiers)
+- [Globally available variables](https://docs.soliditylang.org/en/v0.8.17/units-and-global-variables.html)
+- [Function types](https://docs.soliditylang.org/en/v0.8.17/cheatsheet.html?highlight=visibility#function-visibility-specifiers)
 - Constructor
 - Modifiers (onlyOwner)
 
