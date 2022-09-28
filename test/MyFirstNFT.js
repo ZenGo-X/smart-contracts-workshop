@@ -14,22 +14,18 @@ const {
         return {myFirstNFT, deployer};
       }
   
-      it("mint 5 NFTS & check For Balance", async function () {
+      it("mint 5 NFTS & check the contract Balance", async function () {
           const { myFirstNFT, deployer} = await loadFixture(deployMyFirstNFT);
           
       });
 
-      it("mint 5 NFTS & update BASE_URI", async function () {
-        const { myFirstNFT, deployer} = await loadFixture(deployMyFirstNFT);
-        
-    });
 
       it("mintNFT & transfer to another address", async function () {
         const { myFirstNFT, deployer} = await loadFixture(deployMyFirstNFT);
         
     });
 
-    it("mint 5 NFT & Withdraw funds from the contract(using Withdraw", async function () {
+    it("mint 5 NFT & Withdraw funds from the contract(using Withdraw)", async function () {
         const { myFirstNFT, deployer} = await loadFixture(deployMyFirstNFT);
 
     });
