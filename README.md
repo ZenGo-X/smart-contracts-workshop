@@ -56,18 +56,19 @@ In this workshop every participant will deploy a smart contract on Goerli Testne
 
 ## Solidity Basics
 
-- [Common variables types]()
-- function types
+- [Common variables types](https://docs.soliditylang.org/en/v0.8.17/types.html)
+- [Globally available variables] (https://docs.soliditylang.org/en/v0.8.17/units-and-global-variables.html)
+- [Function types] (https://docs.soliditylang.org/en/v0.8.17/cheatsheet.html?highlight=visibility#function-visibility-specifiers)
 - Constructor
 - Modifiers (onlyOwner)
-- Implement functions from other contracts
 
 ## Tests
 
 - Intro to HardHat testing
+- Using hardhat.sol in order to debug a contract dynamically
 - Write your first NFT contract
 - Test it using HardHat
-- Using hardhat.sol in order to debug a contract live
+
 
 ## Deployment
 
