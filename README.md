@@ -92,10 +92,10 @@ hh run ./scripts/claimRinkebyETHFromFaucetContract.js --network rinkeby
     - mint:
       - checks that user isn't minting more then the MAX_MINT_PER_TX
       - checks that the action doesn't exceeding the MAX_SUPPLY
-      - withdraw:
-        - transfer the mint funds to the collection owner (deployer)
-      - Bonus - setBaseURI :
-        - change the BASE_URI parameter value after the collection is minted out
+    - withdraw:
+      - transfer the mint funds to the collection owner (deployer)
+    - Bonus - setBaseURI :
+      - change the BASE_URI parameter value after the collection is minted out
 
 ## Additional resources
 
