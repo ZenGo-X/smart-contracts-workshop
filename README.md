@@ -51,8 +51,12 @@ In this workshop every participant will deploy a smart contract on Goerli Testne
   - Copy your Deployer account address to the [following doc](https://docs.google.com/document/d/1UhV1ry83E6eavRE_mw7cVpUVN1wQ7MEUUEug0o4VBQw/edit) in a new line
   - Copy your Deployer account private key to [.env](.env) file as the `DEPLOY_WALLET_PRIVATE_KEY` - [guide](https://metamask.zendesk.com/hc/en-us/articles/360015289632-How-to-export-an-account-s-private-key)
 
-- Check that everythink works:
-  SOON
+- Check that everythink works <br>
+  run the command:
+
+```shell
+hh run ./scripts/claimRinkebyETHFromFaucetContract.js --network rinkeby
+```
 
 ## Solidity Basics
 
@@ -90,7 +94,8 @@ In this workshop every participant will deploy a smart contract on Goerli Testne
       - checks that the action doesn't exceeding the MAX_SUPPLY
       - withdraw:
         - transfer the mint funds to the collection owner (deployer)
-      - Bonus - setBaseURI
+      - Bonus - setBaseURI :
+        - change the BASE_URI parameter value after the collection is minted out
 
 ## Additional resources
 
