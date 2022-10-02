@@ -69,13 +69,28 @@ In this workshop every participant will deploy a smart contract on Goerli Testne
 - Write your first NFT contract
 - Test it using HardHat
 
-
 ## Deployment
 
 - Deploy a contract to a live Testnet
 - Verify your contract on Etherscan using HardHat
 - Interact with your contract using a script
 - Change a state parameter on your contract using a script
+
+## Exercise
+
+### Write your own NFT contract
+
+- Complete the missing functions and variables on MyFirstNFT.sol file:
+  - Variables: MAX_SUPPLY, MAX_MINT_PER_TX
+  - functions:
+    - constructor:
+      - define a public BASE_URI (choose one from your favorite real NFT collection)
+    - mint:
+      - checks that user isn't minting more then the MAX_MINT_PER_TX
+      - checks that the action doesn't exceeding the MAX_SUPPLY
+      - withdraw:
+        - transfer the mint funds to the collection owner (deployer)
+      - Bonus - setBaseURI
 
 ## Additional resources
 
