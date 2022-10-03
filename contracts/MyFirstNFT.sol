@@ -8,13 +8,18 @@ import "hardhat/console.sol";
 
 contract MyFirstNFT is ERC721A, Ownable {
     string public BASE_URI;
-    //uint128 public constant MAX_SUPPLY;
-    //uint128 public constant MAX_MINT_PER_TX;
+    uint128 public constant MAX_SUPPLY = 10;
+    uint128 public constant MAX_MINT_PER_TX = 5;
     uint256 mintPrice = 0.01 ether;
 
-    constructor() ERC721A("", "") {}
+    constructor(string memory _baseUri) ERC721A("MyNFT", "MNFT") {
+        BASE_URI = _baseUri;
+    }
 
     function mint(uint8 quantity) public payable {
+        require(quantity <= MAX_MINT_PER_TX, "Can't mint more than 3 tokens per transaction");
+        require(totalSupply() + quantity <= MAX_SUPPLY, "Can't mint more than 10 tokens");
+        require(msg.value == mintPrice * quantity, "Incorrect amount of ETH sent");
         _safeMint(msg.sender, quantity);
     }
 
@@ -22,7 +27,9 @@ contract MyFirstNFT is ERC721A, Ownable {
         return 1;
     }
 
-    function setBaseURI(string memory _baseURI) public onlyOwner {}
+    function setBaseURI(string memory _baseURI) public onlyOwner {
+        BASE_URI = _baseURI;
+    }
 
     function tokenURI(uint256 _tokenId)
         public
@@ -34,8 +41,11 @@ contract MyFirstNFT is ERC721A, Ownable {
             _exists(_tokenId),
             "ERC721Metadata: URI query for nonexistent token"
         );
-        return string(abi.encodePacked(BASE_URI, _tokenId));
+        return string(abi.encodePacked(BASE_URI, _toString(_tokenId)));
     }
 
-    function withdraw() public onlyOwner {}
+    function withdraw() public onlyOwner {
+        (bool success, ) = msg.sender.call{value: address(this).balance}("");
+        require(success, "Transfer failed.");
+    }
 }
