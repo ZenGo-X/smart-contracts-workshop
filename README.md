@@ -97,6 +97,26 @@ hh run ./scripts/claimRinkebyETHFromFaucetContract.js --network rinkeby
     - Bonus - setBaseURI :
       - change the BASE_URI parameter value after the collection is minted out
 
+## HardHat CheatSheet
+
+- Test contract on local HardHat environment:
+
+```shell
+hh test ./test/TestFileName.js
+```
+
+- Deploy a contract on a live network (after configuring the hardhat.config.js file):
+
+```shell
+hh run ./scripts/DeployFileName.js --network networkName
+```
+
+- Verify a contract on Etherscan:
+
+```shell
+hh verify --network networkName contractAddress "constructorArg1" "constructorArg2" ...
+```
+
 ## Additional resources
 
 - [Solidity Cheatsheet](https://docs.soliditylang.org/en/latest/cheatsheet.html)
